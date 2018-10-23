@@ -1,0 +1,16 @@
+{
+  "name": "voice-assistantjs",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "mic": "^2.1.2",
+    "wav-decoder": "^1.3.0",
+    "waveheader": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
