@@ -10,24 +10,3 @@ echo "Installing"
 
 cd node-v10.12.0-linux-armv7l/
 sudo cp -R * /usr/local/
-
-echo "Preparing directory"
-
-cd
-
-mkdir workspace && cd workspace
-
-sudo apt-get install pigpio
-
-npm install onoff
-npm install mic
-npm install pigpio
-npm install wav-decoder
-npm install waveheader
-npm install dialogflow
-npm install cmake-js
-
-mkdir ~/.backup
-
-cp -R node_modules ~/.backup
-

@@ -6,7 +6,9 @@
     "dialogflow": "^0.7.0",
     "mic": "^2.1.2",
     "wav-decoder": "^1.3.0",
-    "waveheader": "^0.0.2"
+    "waveheader": "^0.0.2",
+    "onoff": "^3.2.2",
+    "pigpio": "^1.1.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
