@@ -25,6 +25,7 @@ npm install pigpio
 npm install wav-decoder
 npm install waveheader
 npm install dialogflow
+npm install cmake-js
 
 mkdir ~/.backup
 

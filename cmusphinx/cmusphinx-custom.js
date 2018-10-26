@@ -6,7 +6,7 @@ const fs = require('fs');
 const ps = require('./index').ps;
 const mic = require('mic');
 
-const modeldir = './node-pocketsphinx/my-dictionary/';
+const modeldir = './my-dictionary/';
 const name = '9865';
 const filename = 'file.wav';
 

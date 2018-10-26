@@ -1,7 +1,7 @@
 const fs = require('fs');
 const ps = require('./index').ps;
 
-const modeldir = './node-pocketsphinx/dictionaries/';
+const modeldir = './dictionaries/';
 const filename = './audios/tired.wav';
 
 const cmuConfig = new ps.Decoder.defaultConfig();
