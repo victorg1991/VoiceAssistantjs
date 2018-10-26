@@ -21,7 +21,7 @@ const config = {
 const cmuConfig = new ps.Decoder.defaultConfig();
 cmuConfig.setString('-hmm', '/usr/local/share/pocketsphinx/model/en-us/en-us');
 cmuConfig.setString('-dict', modeldir + name + '.dic');
-cmuConfig.setString('-lm', modeldir + '9865.lm');
+cmuConfig.setString('-lm', modeldir + name + '.lm');
 
 const micInstance = mic(config);
 const stream = micInstance.getAudioStream();
