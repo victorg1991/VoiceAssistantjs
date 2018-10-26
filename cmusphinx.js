@@ -4,12 +4,12 @@ const ps = require('./node-pocketsphinx/index').ps;
 const modeldir = './node-pocketsphinx/dictionaries/';
 const filename = './audios/tired.wav';
 
-const config = new ps.Decoder.defaultConfig();
-config.setString('-hmm', modeldir + 'en-us');
-config.setString('-dict', modeldir + 'cmudict-en-us.dict');
-config.setString('-lm', modeldir + 'en-us.lm.bin');
+const cmuConfig = new ps.Decoder.defaultConfig();
+cmuConfig.setString('-hmm', modeldir + 'en-us');
+cmuConfig.setString('-dict', modeldir + 'cmudict-en-us.dict');
+cmuConfig.setString('-lm', modeldir + 'en-us.lm.bin');
 
-const decoder = new ps.Decoder(config);
+const decoder = new ps.Decoder(cmuConfig);
 
 fs.readFile(filename, function (err, data) {
     if (err) {
