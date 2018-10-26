@@ -1,5 +1,3 @@
-
-
 const query = 'apaga la luz';
 
 const projectId = 'multilocalesample-a62ad';
