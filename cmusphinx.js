@@ -1,5 +1,5 @@
 const fs = require('fs');
-const ps = require('./node-pocketsphinx/index').ps;
+const ps = require('./index').ps;
 
 const modeldir = './node-pocketsphinx/dictionaries/';
 const filename = './audios/tired.wav';

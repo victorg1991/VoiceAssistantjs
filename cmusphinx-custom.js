@@ -3,7 +3,7 @@
 'use strict';
 
 const fs = require('fs');
-const ps = require('./node-pocketsphinx/index').ps;
+const ps = require('./index').ps;
 const mic = require('mic');
 
 const modeldir = './node-pocketsphinx/my-dictionary/';
