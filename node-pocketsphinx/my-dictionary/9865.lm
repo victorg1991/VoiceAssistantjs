@@ -1,0 +1,58 @@
+Language model created by QuickLM on Fri Oct 26 05:45:38 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 4 sentences and 10 words
+
+\data\
+ngram 1=10
+ngram 2=13
+ngram 3=12
+
+\1-grams:
+-1.0607 </s> -0.3010
+-1.0607 <s> -0.2615
+-1.1856 LIGHT -0.2615
+-1.6628 MOVE -0.2615
+-1.3617 OFF -0.2615
+-1.6628 ON -0.2615
+-1.6628 SERVO -0.2615
+-1.6628 SWITCH -0.2817
+-1.0607 THE -0.2615
+-1.3617 TURN -0.2717
+
+\2-grams:
+-0.9031 <s> MOVE 0.0000
+-0.9031 <s> SWITCH 0.0000
+-0.6021 <s> TURN 0.0000
+-0.3010 LIGHT </s> -0.3010
+-0.3010 MOVE THE -0.2430
+-0.3010 OFF THE -0.0969
+-0.3010 ON THE -0.0969
+-0.3010 SERVO </s> -0.3010
+-0.3010 SWITCH OFF 0.0000
+-0.4260 THE LIGHT 0.0000
+-0.9031 THE SERVO 0.0000
+-0.6021 TURN OFF 0.0000
+-0.6021 TURN ON 0.0000
+
+\3-grams:
+-0.3010 <s> MOVE THE
+-0.3010 <s> SWITCH OFF
+-0.6021 <s> TURN OFF
+-0.6021 <s> TURN ON
+-0.3010 MOVE THE SERVO
+-0.3010 OFF THE LIGHT
+-0.3010 ON THE LIGHT
+-0.3010 SWITCH OFF THE
+-0.3010 THE LIGHT </s>
+-0.3010 THE SERVO </s>
+-0.3010 TURN OFF THE
+-0.3010 TURN ON THE
+
+\end\
