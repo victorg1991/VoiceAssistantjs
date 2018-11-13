@@ -43,7 +43,8 @@ stream
       lastClapTime = new Date().getTime();
 
       if (clapsNum == 2) {
-        led.writeSync(value == 0 ? 1 : 0);
+        ledValue = ledValue == 0 ? 1 : 0
+        led.writeSync(ledValue);
         clapsNum = 0;
         lastClapTime = 0;
       }
