@@ -42,7 +42,10 @@ stream
       clapsNum++;
       lastClapTime = new Date().getTime();
 
+      console.log('Clap');
+
       if (clapsNum == 2) {
+        console.log('Double clap');
         ledValue = ledValue == 0 ? 1 : 0
         led.writeSync(ledValue);
         clapsNum = 0;
