@@ -1,38 +1,23 @@
-const query = 'apaga la luz';
+'use strict';
 
-const projectId = 'multilocalesample-a62ad';
-const sessionId = 'sessionId';
+const dialogflow = require('./raspberry-dialogflow');
+
+const text = 'apaga la luz';
 const languageCode = 'es-ES';
 
-const dialogflow = require('dialogflow');
-const sessionClient = new dialogflow.SessionsClient();
+dialogflow.detectText(text, languageCode).then(responses => {
 
-const sessionPath = sessionClient.sessionPath(projectId, sessionId);
+    console.log('Detected intent!');
 
-const request = {
-    session: sessionPath,
-    queryInput: {
-        text: {
-            text: query,
-            languageCode: languageCode,
-        },
-    },
-};
+    const result = responses[0].queryResult;
+    console.log(`  Query: ${result.queryText}`);
+    console.log(`  Response: ${result.fulfillmentText}`);
 
-sessionClient
-    .detectIntent(request)
-    .then(responses => {
-
-        console.log('Detected intent');
-        const result = responses[0].queryResult;
-        console.log(`  Query: ${result.queryText}`);
-        console.log(`  Response: ${result.fulfillmentText}`);
-        if (result.intent) {
-            console.log(`  Intent: ${result.intent.displayName}`);
-        } else {
-            console.log(`  No intent matched.`);
-        }
-    })
-    .catch(err => {
-        console.error('ERROR:', err);
-    });
+    if (result.intent) {
+        console.log(`  Intent: ${result.intent.displayName}`);
+    } else {
+        console.log(`  No intent matched.`);
+    }
+}).catch(err => {
+    console.error('ERROR:', err);
+});
