@@ -44,9 +44,9 @@ stream
 
       console.log('Clap');
 
-      if (clapsNum == 2) {
+      if (clapsNum === 2) {
         console.log('Double clap');
-        ledValue = ledValue == 0 ? 1 : 0
+        ledValue = ledValue === 0 ? 1 : 0;
         led.writeSync(ledValue);
         clapsNum = 0;
         lastClapTime = 0;
